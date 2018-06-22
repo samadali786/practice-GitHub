@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+//head gives us the title of the webpage on browser which is "About HTML"<br>
+<head> 
+
+<title>About HTML</title>
+
+</head>
+
+
+//Everything comes under the body tags like paragraphs, headings, links, images, background color<br>
+
+<body background="C:/Users/samad/Pictures/green.jpg">
+
+               //this is main heading with title artibutes "all about HTML"
+<h1 title="All about HTML"> HTML practice </h1>
+<hr>
+              
+              //this is the another heading which is least then main heading
+<h2>My first paragraph is about HTML</h2>
+
+
+
+             // Two paragraphs in HTML and secound paragraph with bold
+<p> HTML is a fun language it is used to,<br> 
+    creates web pages and web developer must,<br>
+    have to learn HTML.<br>
+</P>
+
+<p><b> This paragraph about,<br>
+       HTML is in bold text<br>
+</b></p>
+<hr>
+
+
+// using href for showing links<br>
+<br>        <br/>
+
+
+<a href="https://www.w3schools.com">www.google.com</a><br>
+<br>        <br/>
+<hr>
+// using img for diffrent images not using style tag
+<br>        <br/>
+
+<h2 style = "color:orange;"> Jaguar with Cub </h2>
+<img src="C:/Users/samad/Pictures/ja.png" alt="jaguar with cub" width="500" height="600"><br>
+<hr>
+
+//using style tag in image to set width and height like
+<h2 style = "color:red;"> Jaguar </h2>
+<img src="C:/Users/samad/Pictures/jaguar.jpg" alt="jaguar" style = "width:500px;height:600px;"><br>
+
+
+//creating lists by using same heading tags 
+// using style tags in headings and list to change color, fonts, and size we can also use list-style-types disc, circle, none
+
+<h2 style = "color:grey;"> list of unordered list names </h2>
+<ul style = "color:red; list-style-type:disc;">                                 
+  <li> Samad Ali</li>
+  <li> Khalid Ali</li>
+  <li> Safan Ali</li>
+</ul>
+
+<h2 style = "color:grey;"> list of ordered list name</h2>
+<ol style = "color:green;">
+  <li> Samad Ali </li>
+  <li> Muneera Ali </li>
+  <li> Khalid Ali </li>
+</ol>
+<hr>
+//using style to change fonts color, size, alignment, and family
+<h3 style = "color:blue; font-size:40px;">changing color and font size</h3>
+
+<h3 style = "font-family:courier;">Font is changing to courier</h3>
+
+<p style = "text-align:center; color:green;">
+           This is a center text,<br>
+           about html, with diffrent color,<br>
+           and it uses horizontal rule.<br>
+</p>
+<hr>
+
+
+//using horizontal rule to break to break html page
+<h2>This is heading about horizontal rule</h2>
+<p>This is some other text.</p>
+<hr> 
+
+
+//how to formating an element 
+<p><b>This text is bold.</b></p><br>
+<p><strong>This text is strong</strong></p><br>
+<p><i>This text is italic</i></p><br>
+<p><em>This text is emphasized</em></p><br>
+<p><small>this text is smaller </small></h2><br>
+<p>my first name is <mark> Samad </mark> and last name is <mark> Ali </mark></p></br>
+<p> delete color <del>green</del> not red.</p>
+<p> insert color <ins> red </ins></p>
+<p> this is a <sub> subscript </sub> text.</p>
+<p> this is a <sup> supperscript </sup> text.</p>
+<hr> 
+
+//using quotation,abbreviation, address, cited, and text direction element in html
+<p> my goal is to learn html as a <q>webdeveloper</q></p>
+<p> the abbreviation of <abbr title="Application programing Interface">API scrol mouse over API for abbreviation</abbr></p>
+<address>
+2914 Cliff Cyn.<br>
+San Antonio TX.<br>
+78259.<br>
+USA.
+</address>
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+<bdo dir="rtl">This line will be written from right to left</bdo>
+<hr>
+
+//using comments it is also used as a debugging tool, but not displayed on browswer
+<!-- Do not display this at the moment
+ <img border="0" src="pic_mountain.jpg" alt="Mountain">
+ --> 
+
+<!-- Comments are not displayed on browswer -->
+<hr>
+
+//using html Border Color and rgb color values 
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+<h1 style="border:4px solid green;">Samad Ali</h1>
+<h1 style="border:8px solid red;">learn HTML</h1>
+<hr>
+
+<p>Same as color name "Green":</p>
+
+<h1 style="background-color:rgb(60, 179, 113);">rgb of green color</h1>
+<h1 style="background-color:#3cb371;">hex value of green color </h1>
+<h1 style="background-color:hsl(147, 50%, 47%);">hsl of green color</h1>
+<hr>
+
+//using HTML with CSS(cascading style sheets)
+//CSS can be added to HTML in 3 ways Inline, Iternal and External
+ 
+<h1 style="color:blue;">This is a Blue Heading an example of Inline CSS</h1> 
+<hr>
+
+//for using internal CSS we have to defined it in head tag within subtag style
+<head>
+<style>
+h4 {color: yellow;}
+</style>
+</head>  
+
+<h4> heading(h4) is always yellow bcz it is already defined in head within style</h4>
+<hr>
+
+//using External CSS which is used to define the style of many HTML pages,
+
+<p> with the use of External CSS we can change the look of an entire web site, by changing one file like stylesheet.css<br>
+    styles.css contains all the styles of body, heading, and paragraph, and we can import it in this current file inside the head tag<br>
+    by using link tag within the head tag like <!--<link rel="stylesheet" href="styles.css"> --> go over it in CSS tutorial</p>
+
+</body>
+</html> 
