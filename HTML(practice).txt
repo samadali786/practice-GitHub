@@ -4,7 +4,7 @@
 //head gives us the title of the webpage on browser which is "About HTML"<br>
 <head> 
 
-<title>How to create HTML documents</title>
+<title>How to create HTML document</title>
 
 </head>
 
