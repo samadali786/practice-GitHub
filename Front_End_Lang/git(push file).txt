@@ -9,5 +9,5 @@ How to change or add file and commit it to the github repository
 5) $ git status                                        (to track the untract file in the project folder from desktop)                                                 
 3) $ git add new_file.txt                              (to add new untract file or git -A to add multiple files)
 4) $ git commit -m "E-Commerce Scenarios"              (commit -m to add message with updated file or files)
-5) $ git push origin master(need pass phrase)          (git push to finaly add file)
+5) $ git push -u origin master                         (need pass phrase git push to finaly add file)
 
