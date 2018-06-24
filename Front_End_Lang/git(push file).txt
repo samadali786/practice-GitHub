@@ -1,0 +1,5 @@
+1) $ git clone git@github.com:samadali786/ZeroShirts.git (need passphrase sam786).
+2) $ cd ZeroShirts/
+3) $ git add milestone/3/E-Commerce\(Scenarios\).docx
+4) $ git commit -m "E-Commerce Scenarios"
+5) $ git push origin master(need pass phrase)
