@@ -1,0 +1,93 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <title> HTML Tutotrial 2 </title>
+</head>
+
+
+//using border arround the table by using style tag as a CSS property
+<style>
+table, th, td {
+      border: 1px solid black;
+}
+</style>
+
+
+
+<body style = "background-color: powderblue;">
+
+<h1> Basic HTML Table </h1>
+<hr>
+
+// using table tag to create the table, tr tag for table row and table cell defined by tag td and header defined by th tag, also use caption
+
+<table style="width:100%">
+<caption>Students data</caption>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+ </table>
+<hr>
+
+//using html as a multiple class artibute
+
+<style>
+.country {
+     background-color: tomato;
+     color: white;
+     text-align: center;
+     padding: 10px;
+}
+
+.city {
+     background-color: yellow;
+     color:black;
+     text-align: center;
+     padding: 10px;
+}
+
+
+</style>
+
+<h2 class="country">Pakistan</h2>
+<p>Pakistan is a good country.</p>
+
+<h2 class = "country">United States</h2>
+<p> United States is also a good country.<p>
+
+
+<h2 class= "city">Islamabad</h2>
+<p> Islamabad is the capital of Pakistan</p>
+
+<h2 class= "city">Washington D.C</h2>
+<p> Washington D.C is the capital of United States</p>
+<hr>
+
+// we can also use diffrent class with same tag
+
+<h2 class="country">Pakistan</h2>
+<p class= "city">Karachi is capital of Pakistan.</p>
+
+<h2 class="country">United States</h2>
+<p class= "city">Washington D.C is capital of United States.</p>
+<hr>
+
+ </body>
+ </html>
+ 
+
+
+

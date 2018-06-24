@@ -1,0 +1,129 @@
+1) Select Statement in SQL:
+  -- SELECT * FROM Customers    (select everything from Cutomer table).
+  -- SELECT CustomerName, City FROM Customers  (select CustomerName and City from Customers table)
+
+2) Select Statement using DISTINCT:
+   
+  -- SELECT DISTINCT Country FROM Customers; (Select Distinct country from Customers table which giving all country names)
+   
+  -- SELECT Count(*) AS DistinctCountries
+     FROM (SELECT DISTINCT Country FROM Customers); (Select number of didtinct countries From Customer table it returns total number of countries)
+
+3) WHERE statement in SQL:
+
+   -- SELECT * FROM Customers   (returns all customer records from Customers table where county is only Mexico) 
+      WHERE Country='Mexico';
+
+4) AND, OR, NOT in SQL:
+   
+   -- SELECT * FROM Customers
+      WHERE Country='Germany' AND City='Berlin'; (select everything from customers table where Country is only Germany and City is Berlin)
+   
+   -- SELECT * FROM Customers
+      WHERE Country='Germany' OR City='Berlin';  (select everything from customers table where Country or only Germany and City is Berlin)
+ 
+   -- SELECT * FROM Customers
+      WHERE NOT Country='Germany';  (select everything from customers table where Country is not Germany it returns all records except the record where country is Germany)
+
+5) Order by statement in SQL:
+ 
+   -- SELECT * FROM Customers
+      ORDER BY Country DESC;  (select everything from Customers table arrange(order by) country in descending order)
+
+   -- SELECT * FROM Customers
+      ORDER BY Country ASC, CustomerName DESC; (slect everything from Customers table arrange Country in asscending and customerName in descending)
+
+   -- SELECT * FROM Customers
+      ORDER BY Country;       (select everything from Customers table arrange(order by) country)
+
+6) Insert statement in SQL:
+   
+   -- INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+      VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');    (insert into Customers table where column1 = ContactName, etc.. and values inserted according to column) 
+
+   -- INSERT INTO Customers (CustomerName, City, Country)
+      VALUES ('Cardinal', 'Stavanger', 'Norway');   (insert the data into only perticular columns)
+
+
+7)  IS NULL and NOT NULL in SQL:
+
+   -- SELECT LastName, FirstName, Address FROM Persons (select lastName and FirstName from person table where Address IS Null, it returns those records with first and last names without Address)
+      WHERE Address IS NULL;  
+
+   -- SELECT LastName, FirstName, Address FROM Persons
+      WHERE Address IS NOT NULL;                      (select lastName and FirstName from person table where Address IS NOT Null, it returns those records with first and last names with Address)
+
+
+8) UPDATE statement in SQL:
+
+   -- UPDATE Customers
+      SET ContactName = 'Alfred Schmidt', City= 'Frankfurt' (update customer table and set contactName to Alfred Schmidt and city Frankfurt in customers table only where CustomerID is equal to 1) 
+      WHERE CustomerID = 1; 
+
+9) DELETE statement in SQL:
+
+   -- DELETE FROM Customers
+      WHERE CustomerName='Alfreds Futterkiste'; (DELETE from customers table where customerName is eql to 'Alfreds Futterkiste' it delete whole record) 
+   
+   -- DELETE * FROM table_name; (DELETE all records from customers table)
+
+10) TOP, LIMIT, and ROWNUM in SQL:
+
+   -- SELECT TOP 3 * FROM Customers; (returns the first 3 records from customers table)
+   -- SELECT * FROM Customers LIMIT 3; (it is equivalent to first statement but using LIMIT)
+   -- SELECT * FROM Customers WHERE ROWNUM <= 3; (it is equivalent to first statement but using ROWNUM)
+   -- SELECT TOP 50 PERCENT * FROM Customers; (it returns 50% of customers table records)
+
+   -- SELECT TOP 3 * FROM Customers WHERE Country='Germany'; (it returns first 3 records from Customer table only where country is Germany) 
+   -- same for LIMIT by using where
+   -- same for ROWNUM by using where
+
+11) MIN and Max in SQL:
+   
+   -- SELECT MIN(Price) AS Smallest price 
+      FROM Products;       (it Select Min(column name which is price) AS Smallest price (is string showing on return) from products table)
+      
+   -- SELECT MAX(Price) AS LargestPrice
+      FROM Products;       (it Select Max(column name which is price) AS Largest price (is string showing on return) from products table)
+
+12) COUNT(), AVG(), and SUM() in SQL:
+
+   -- SELECT COUNT(ProductID)
+      FROM Products;          (It returns count(the numbers of column name which is productId) FROM Products table) 
+
+   --SELECT AVG(Price)
+     FROM Products;           (It returns average(the numbers of column name which is price) FROM Products table) 
+
+   --SELECT SUM(Quantity)     (It returns the SUM(the total sum of numnerice columns by using Quantity) FROM Product table)
+     FROM OrderDetails; 
+
+13) LIKE operator in SQL:
+    
+   --SELECT * FROM Customers
+     WHERE CustomerName LIKE 'a%'; (It returns all the records by using CustomerName Column and return all Customer name which begin with a)
+
+   --SELECT * FROM Customers
+     WHERE CustomerName LIKE '%a'; (It returns all the records by using CustomerName Column and return all Customer name which end with a)
+
+  --SELECT * FROM Customers
+    WHERE CustomerName LIKE '%or%';(The following SQL statement selects all customers with a CustomerName that have "or" in any position)
+
+  --SELECT * FROM Customers
+    WHERE CustomerName LIKE '_r%'; (The following SQL statement selects all customers with a CustomerName that have "r" in the second position)
+
+  --SELECT * FROM Customers
+    WHERE CustomerName LIKE 'a_%_%'; (The following SQL statement selects all customers with a CustomerName that starts with "a" and are at least 3 characters in length)
+ 
+  --SELECT * FROM Customers
+    WHERE ContactName LIKE 'a%o';   (The following SQL statement selects all customers with a ContactName that starts with "a" and ends with "o")
+
+  --SELECT * FROM Customers
+    WHERE CustomerName NOT LIKE 'a%'; (The following SQL statement selects all customers with a CustomerName that does NOT start with "a")
+
+
+
+
+
+
+
+ 

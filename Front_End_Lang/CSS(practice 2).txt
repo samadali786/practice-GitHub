@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS tutorial 2</title>
+</head>
+
+<body style= "background-color: powdwerblue;">
+<hr>
+
+//using position in CSS Text by 5 diffrent values that are static, relative, fixed, absolute, stick
+
+<head>
+<style>
+
+div.static {
+         position: static;
+         border: 3px solid #73AD21;
+}
+
+div.relative {
+         position: relative;
+         left: 30px;
+         border: 3px solid #73AD21;
+}
+
+
+div.fixed {
+          position: fixed;
+          bottom: 0;
+          right: 0;
+          width: 300px;
+          border: 3px solid #73AD21;
+}
+
+
+div.relativeabs {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+} 
+
+div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}
+
+
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+
+<h2> position: static;<h2>
+<p>An element with position: static; is not positioned in any special way; it is 
+always positioned according to the normal flow of the page:</p>
+<div class= "static"> 
+This div element has position:static;
+</div>
+
+
+
+
+<h2> position: relative;</h2>
+<p>An element with position: relative; is positioned relative to its normal position:</p>
+<div class="relative">
+This element has position: relative;
+</div>
+
+
+
+<h2>position: fixed;</h2>
+<p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled:</p>
+<div class="fixed">
+This div element has position: fixed;
+</div>
+
+
+<h2>position: absolute;</h2>
+<p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+<div class="relativeabs">This div element has position: relative;
+<div class="absolute">This div element has position: absolute;</div>
+</div>
+
+
+
+<p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+<div class="sticky">I am sticky!</div>
+<div style="padding-bottom:2000px">
+  <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+  <p>Scroll back up to remove the stickyness.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+</body>
+<hr>
+
+//using combinators in CSS there are four types desecendent selctor, child selector, adjacent sibling selector, general selector
+
+<head>
+<style>
+
+div p {
+        background-color: yellow;
+}
+
+
+
+div > p {
+    background-color: yellow;
+}
+
+
+div + p {
+    background-color: yellow;
+}
+
+
+div ~ p {
+    background-color: yellow;
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+
+<h2>Decendent selector</h2>
+<div>
+  <p>Paragraph 1 is in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <span><p>Paragraph 3 in the div.</p></span>
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <span><p>Paragraph 3 in the div.</p></span> <!-- not Child but Descendant -->
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+</div>
+
+<p>Paragraph 3. Not in a div.</p>
+<p>Paragraph 4. Not in a div.</p>
+
+
+
+
+<p>Paragraph 1.</p>
+
+<div>
+  <code>Some code.</code>
+  <p>Paragraph 2.</p>
+</div>
+
+<p>Paragraph 3.</p>
+<code>Some code.</code>
+<p>Paragraph 4.</p>
+</body>
+<hr>
+
+//using psuedo classes in CSS using syntax : and can also using with classes
+<head>
+<style>
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+
+
+/*using psuedo with classes*/
+a.highlight:hover {
+    color: #ff0000;
+} 
+
+
+/*using div with psuedo classes*/
+
+div {
+    background-color: green;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+div:hover {
+    background-color: blue;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+
+
+<p><a class="highlight" href="css_syntax.asp">CSS Syntax</a></p>
+<p><a href="default.asp">CSS Tutorial</a></p>
+
+
+<p>Mouse over the div element below to change its background color:</p>
+<div>Mouse Over Me</div>
+</body>
+<hr>
+
+//using psuedo element in CSS with syntax :: can also uses with classes
+
+<head>
+<style>
+
+/*using psuedo element for first line*/
+p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+}
+
+
+/*using psuedo element for first letter*/
+p::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+}
+
+
+/*using psuedo element for first letter with class*/
+p.intro::first-letter {
+    color: #ff0000;
+    font-size:200%;
+}  
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+
+<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+
+<p>You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
+
+<p class="intro">This is an introduction.</p>
+<p>This is a paragraph with some text. A bit more text even.</p>
+</body>
+<hr>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

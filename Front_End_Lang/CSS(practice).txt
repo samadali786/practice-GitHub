@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> CSS Tutorial</title>
+<style>
+
+h1 {
+     background-color: powdwerblue;
+     color: red;
+     text-align:center;
+     padding:10px;
+}
+
+p {
+      text-align: left;
+      color: green;
+}
+
+</style>
+</head>
+
+<body style= "background-color: powderblue;">
+
+<h1><b>This Tutorial is about CSS</b></h1>
+<p style= "font-family:courier;"> 
+       CSS is known as cascading style sheets, it is used for styling of HTML element,<br>
+       and also saves a lot of work, we can apply the same design and style to the many,<br>
+       HTML pages at once, we can also make the seperate CSS file for all styles and import it<br>
+       in the HTML file inside the head by using link rel, type, href is an example of external CSS and those styles can aply to all web pages at once<br>
+       this is the example of element selector
+</p> 
+<hr>
+
+//using id selector in CSS which is not effected by style 
+
+<head>
+<style>
+#para1 {
+    text-align: center;
+    color: red;
+}
+</style>
+</head>
+<body>
+
+<p id="para1">Hello World!</p>
+<p>This paragraph is not affected by the style.</p>
+</body>
+<hr>
+
+//using class selector in CSS
+
+<head>
+<style>
+p.country {
+      text-align: center;
+      padding: 10px;
+}
+
+
+p.city {
+       color: red;
+       font-family:courier;
+       padding: 5px;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<h1 class="country">This is a country class Country name is Pakistan</h1>
+<p class="country city"> This is country and city class city is Karachi</p>
+</body>       
+<hr>
+
+//using grouping selector
+<head>
+<style>
+.student,.course  {
+    text-align: center;
+    color: red;
+}
+</style>
+</head>
+<body>
+
+<h1 class="student">Hello Samad Ali</h1>
+<h2 class="course">CSS</h2>
+
+</body>
+<hr>
+
+<h3> Three ways to insert the CSS
+<ol  style = "color:blue",1>
+  <li>External style sheet</li>
+  <li>Internal style sheet</li>
+  <li>Inline style sheet</li>
+</ol>
+<hr>
+
+//using External style CSS it is used inside the head of the current HTML file by using link tag like
+
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+
+<body>
+
+<h1> This is a heading getting style from mystyle.css</h1>
+<p> This is a paragraph getting style from mystyle.css</p>
+
+</body>
+<hr>
+
+//using Internal style in CSS 
+
+<head>
+<style>
+
+body {
+}
+
+h4 {
+     color: orange;
+     text-align: left;
+}
+
+</style>
+</head>
+
+<body>
+
+<h4>This is a heading that using internal CSS</h1>
+<p>This is a paragraph</p>
+<hr>
+
+//using inline style CSS directly comes inside the tags
+
+<head>
+<body>
+
+<h1 style="color:blue; margin-left:30px;"> This is a heading</h1>
+<p style="font-family:courier;"> This is a paragraphh in courier</p>
+<hr>
+
+//using color in CSS like background color, text color, border color, color values, rgb color, Hex value color, HSL value color
+
+<h1 style="background-color:MediumSeaGreen;">Hello World!</h1>
+<h1 style="color:green;">Hello World!</h1>
+<h1 style="border:3px Violet;">Hello World!</h1>
+<hr>
+
+//this color values are applied to the background of text
+<h1 style="background-color:rgb(255, 99, 71);">This is the rgb color value of Tomato</h1>
+<h1 style="background-color:#ff6347;">This is the HFX value of color Tomato</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);"> This is the HSL value of color Tommato</h1>
+<hr>
+
+//using rgba and hsla colors for 50% trasparent in background color
+<h1 style="background-color:rgba(255, 99, 71, 0.5);"This is rgba 50% transparent of color Tomato </h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">"This is hsla 50% transparent of color Tomato </h1>
+<hr>
+
+//using background image in CSS
+<head>
+<style>
+body {
+    background-image: url("C:/Users/samad/Pictures/green.jpg");
+    
+}
+</style>
+</head>
+<body>
+
+<h1>Hello World!</h1>
+
+<p>This page has an green image as the background!</p>
+
+</body>
+<hr>
+
+// using background image with diffrent properties
+<head>
+<style>
+
+body {
+       background-image: url("C:/Users/samad/Pictures/cube-4.jpg");
+       background-repeat: no-repeat;
+       background-position: right bottom;
+       background-size: 300px 500px;
+       background-attachment: fixed;
+       margin-right: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1> This image is in right top part of the webpage with its properties</h1>
+<p> This is the image of cubes</p>
+</body>
+<hr>
+
+//using margins by using div and inheritance in CSS 
+
+<head>
+<style>
+
+div { 
+    border: 1px solid red;
+    margin-left: 100px;
+}
+
+p.ex1 {
+     margin-left: inherit;
+}
+</style>
+</head>
+<body>
+
+<h2>Use of the inherit value</h2>
+<p>Let the left margin be inherited from the parent element:</p>
+
+<div>
+<p class="ex1">This paragraph has an inherited left margin (from the div element).
+</p>
+</div>
+</body>
+<hr>
+
+//using div for padding is top, right, bottom, and left
+
+<head>
+<style>
+
+div {
+      padding-top: 50px;
+      padding-right: 30px;
+      padding-bottom: 50px;
+      padding-left: 80px;
+      border: 2px solid red;
+
+}
+
+p.pad {
+      
+      margin-left: inherit;
+
+
+
+</style>
+</head>
+
+<body>
+
+<div> This element has padding of 70px.
+<p = class"pad"> This paragraph has inherited left margin.</p>
+
+</div>
+
+</body>
+<hr>
+
+//using div tag for height, width, and dimensional
+
+<head>
+<style>
+
+div {
+      height: 20px;
+      width: 50px;
+      background-color: orange;
+}
+
+</style>
+</head>
+
+<body>
+<h2>Set the height and width of an element</h2>
+
+<p>This div element has a height of 200px and a width of 50%:</p>
+
+<div></div>
+</body>
+<hr>
+
+
+// using text formating in CSS
+
+<h2>using color in text formating</h2>
+
+<head>
+<style>
+body {
+    color: blue;
+}
+
+h1 {
+    color: green;
+}
+</style>
+</head>
+<body>
+
+<h1>This is heading 1</h1>
+<p>This is an ordinary paragraph. Notice that this text is blue. The default text color for a page is defined in the body selector.</p>
+
+</body>
+
+//using alignment and decoration in text 
+<h2>using alignment in text formating</h2>
+
+<head>
+<style>
+h1 {
+    text-align: center;
+    text-decoration: overline;
+}
+
+h2 {
+    text-align: left;
+    text-decoration: line-through;
+}
+
+h3 {
+    text-align: right;
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<h1>Heading 1 (center)</h1>
+<h2>Heading 2 (left)</h2>
+<h3>Heading 3 (right)</h3>
+
+<p>The three headings above are aligned center, left and right.</p>
+
+</body>
+
+//using transformation, indentation, letter spacing in text 
+<h2>using transformation, indentation, and letter spacing in text formating</h2>
+
+<head>
+<style>
+
+p.uppercase {
+    text-transform: uppercase;
+}
+
+p.lowercase {
+    text-transform: lowercase;
+}
+
+p.capitalize {
+    text-transform: capitalize;
+}
+
+p {
+     text-indent: 40px;
+}
+
+h4 {
+     letter-spacing: 3px;
+     
+}
+
+</style>
+</head>
+<body>
+
+<p class="uppercase">This is some text.</p>
+<p class="lowercase">This is some text.</p>
+<p class="capitalize">This is some text.</p>
+
+<p> this text is indented</p>
+<h4> This is a heading</h4>
+
+</body>
+
+//using line heigth, direction, and text shadow in text formating
+
+<head>
+<style>
+p.small {
+    line-height: 0.7;
+}
+
+p.ex1 {
+    direction: rtl;
+}
+
+h4 {
+    text-shadow: 3px 2px red;
+}
+
+</style>
+</head>
+
+<body>
+ 
+<p class="small"> This is paragraph with change in line height</p>
+<p class= "ex1"> This is a paragraph about line direction.</P>
+<h4>This is a text shadow effect</h4>
+</body>
+<hr>
+
+//using font familly, font style, font size, and font weight
+
+<head>
+<style>
+
+p.serif {
+           font-family: "Times New Roman", Times, serif;
+}
+
+p.italic {
+    font-style: italic;
+}
+
+p {
+    font-size: 14px;
+}
+
+p.thick {
+    font-weight: bold;
+}
+
+</style>
+</head>
+
+<body>
+     <p class ="serif"> This font is from serif family</p>
+     <p class ="italic"> This is font is in italic format</p>
+     <p> This font size is 14px</p>
+     <p class = "thick"> This font is thick</p>
+</body>
+<hr>
+
+//using links properties with a in CSS like link,visited,hover,exit, also use text
+// decoration, and background color  
+
+<head>
+<style>
+
+/* unvisited link */
+a:link {
+    color: red;
+    background-color: yellow
+}
+
+/* visited link */
+a:visited {
+    color: green;
+    background-color: cyan;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+    text-decoration: underline;
+    background-color: lightgreen;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+    text-decoration: underline;
+    background-color: pink;
+}
+</style>
+</head>
+<body>
+
+<p><b><a href="www.google.com" target="blank"> www.google.com</a></b></p>
+<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+
+</body>
+<hr>
+
+//using table in CSS td table data, tr table row and th table head
+
+<head>
+<style>
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    height: 50px;
+    vertical-align: bottom;
+}
+</style>
+</head>
+<body>
+
+<h2>The vertical-align Property</h2>
+<p>This property sets the vertical alignment (like top, bottom, or middle) of the content in th or td.</p>
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+</tr>
+</table>
+
+</body>
+
+<head>
+<style>
+
+table, th, td {
+ 
+        border: 1px solid black;
+}
+
+table {
+         border-collapse;
+         width 100px;
+}
+
+td {
+        height 50px;
+        vertical-align: bottom;
+}
+
+tr:hover {background-color:#f5f5f5;}
+
+
+</style>
+</head>
+
+<body>
+<h2> the vertical align property </h2>
+
+<table>
+<tr>
+<th> first name</th>
+<th> last name </th>
+<th> class </th>
+</tr>
+
+
+<tr>
+<td> Samad </td>
+<td> Ali </td>
+<td> CS-3723
+</tr>
+
+</table>
+</body>
+<hr>
+
+//using Display with block elements, inline elements, overirde the display value by 
+
+<h1> block elements are /* <p>,<header>,<h1-h6>, and inline elements are <span>,<a>,
+<image>*/
+
+// using li, span, a, and hideElement-display in inline element
+
+<head>
+<style>
+
+li {
+      display: inline;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<p> Display a list of horizontal menu:</p>
+
+<ul>
+  <li><a href= "https://www.google.com" target= "_blank">www.google.com</a></li>
+  <li><a href= "https://www.CNN.com" target= "_blank">www.CNN.com</a></li>
+</ul>
+</body>
+<hr>
+
+//using Span of inline element display
+<head>
+<style>
+span {
+    display: block;
+}
+</style>
+</head>
+<body>
+
+<span>A display property with a value of "block" results in</span> <span>a line break between the two elements.</span>
+
+</body>
+<hr>
+
+// using a of inline element display
+
+<head>
+<style>
+
+a {
+    display: block;
+}
+
+</style>
+</head>
+
+<body>
+<a href= "https://www.amazon.com" target= "_blank">www.amazon.com</a>
+<a href="/css/default.asp" target="_blank">CSS</a>
+<a href="/js/default.asp" target="_blank">JavaScript</a>
+</body>
+<hr>
+
+//using hide- element display in inline element
+
+<head>
+<style>
+
+h1.hidden {
+       visibility: hidden;
+}
+</style>
+</head>
+
+<body>
+<h1> This is a vissible heading</h1>
+<h1 class="hidden"> This is a hidden heading</h1>
+<p> Hidden heading still takes up space </p>
+</body>
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html> 
