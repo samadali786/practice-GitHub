@@ -1,5 +1,13 @@
+
+
+How to change or add file and commit it to the github repository 
+
 1) $ git clone git@github.com:samadali786/ZeroShirts.git (need passphrase sam786).
-2) $ cd ZeroShirts/
-3) $ git add milestone/3/E-Commerce\(Scenarios\).docx
-4) $ git commit -m "E-Commerce Scenarios"
-5) $ git push origin master(need pass phrase)
+2) $ cd ZeroShirts/                                    (add files manually in the project folder from the desktop) 
+3) $ cd 
+4) $ ls                                                (to check the file that added into project folder from the desktop)
+5) $ git status                                        (to track the untract file in the project folder from desktop)                                                 
+3) $ git add new_file.txt                              (to add new untract file or git -A to add multiple files)
+4) $ git commit -m "E-Commerce Scenarios"              (commit -m to add message with updated file or files)
+5) $ git push origin master(need pass phrase)          (git push to finaly add file)
+
