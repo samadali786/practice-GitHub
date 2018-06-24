@@ -1,0 +1,14 @@
+How to add new ssh keys for using github
+
+
+1) first go to settings in gitHub account after login 
+2) go to the ssh and gpg keys
+3) then press the new ssh key button in green
+4) In title give the name of the key
+5) go to the folder users/samad/.ssh/
+6) open the file name id_rsa.pub file (microsoft publisher file format) in notepad editor
+7) copy the ssh key 
+8) then paste the ssh key under the key portion in the github account 
+9) then press the green button "Add SSH key", now new key is generated and ready to use
+10 In command line login with your username and new password and have to remember the password for the new ssh key
+
