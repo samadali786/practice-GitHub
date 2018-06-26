@@ -1,0 +1,20 @@
+//getting and creating projects cmd
+
+git init (initialialize a local repository)
+
+git clone http: (from git_hub account to create local copy of remote repository on desktop or github folder)
+
+
+Basic Commands of git hub
+
+git status        (checking status of a new file added or modified)
+
+git add file1.txt (add new file into git repository)
+
+git commit -m "new file1.txt added" (giving message of changing)
+
+git push -u origin master (push the changes with message into your git hub account)
+
+git rm -r (remove folder or file -r for folders)
+
+
