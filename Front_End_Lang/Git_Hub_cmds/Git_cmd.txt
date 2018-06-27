@@ -52,5 +52,5 @@ git log                                                            (show changes
 git log --summary                                                  (show changes detail)
 git diff [source branch] [target branch]                           (show diffrence between two branch)
 
-
+file changes
 
