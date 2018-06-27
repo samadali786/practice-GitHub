@@ -35,3 +35,22 @@ git merge [source branch] [target branch]                          (Merge a bran
 git stash                                                          (Stash changes in a dirty working directory) 
 git stash clear                                                    (Remove all stashed entries)  
 
+
+Sharing and Updating projects in gitHub
+
+git push origin [branch name]                                      (push a branch to your remote repo)
+git push -u origin [branch name]                                   (push changes to remote repo(and remember the branch)
+git push                                                           (push changes to remote repo (remembered branch)
+git pull                                                           (update local repo to the newest commit)
+git pull origin [branch name]                                      (pull changes from remote repository)
+git remote add origin https://git@github.com/[username]/[repository-name].git  (Add remote repository)
+
+Inception and comparissions 
+
+
+git log                                                            (show changes)
+git log --summary                                                  (show changes detail)
+git diff [source branch] [target branch]                           (show diffrence between two branch)
+
+
+
